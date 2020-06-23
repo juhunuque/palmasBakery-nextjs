@@ -1,5 +1,12 @@
 /* ensure all pages have Bootstrap CSS */
 @import '~bootstrap/dist/css/bootstrap.min.css';
+@import "../public/assets/css/LineIcons-min.css";
+@import "../public/assets/css/magnific-popup-min.css";
+@import "../public/assets/css/slick-min.css";
+@import "../public/assets/css/animate.css";
+@import "../public/assets/css/default-min.css";
+@import "../public/assets/css/style.css";
+
 
 .md-container {
   max-width: 800px;
@@ -23,4 +30,8 @@
 .sml-logo {
   height: 1em;
   margin-left: 10px;
+}
+
+.img-opacity {
+  opacity: 0.5;
 }

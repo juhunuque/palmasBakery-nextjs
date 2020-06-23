@@ -1,89 +1,37 @@
 import Head from 'next/head'
 import { Container, Row, Card, Button } from 'react-bootstrap'
+import PreLoader from '../components/PreLoader'
+import NavBar from '../components/NavBar'
+import About from '../components/About'
+import Contact from '../components/Contact'
+import Footer from '../components/Footer'
+import BackToTop from "../components/BackToTop";
 
 export default function Home() {
   return (
-    <Container className="md-container">
+    <div>
       <Head>
-        <title>ReactJS with react-bootstrap</title>
+        <title>Palma's Bakery</title>
         <link rel="icon" href="/favicon-32x32.png" />
+        <script type="text/javascript" src="/assets/js/vendor/modernizr-3.6.0.min.js"></script>
+        <script type="text/javascript" src="/assets/js/vendor/jquery-1.12.4.min.js"></script>
+        {/*<script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>*/}
+        <script type="text/javascript" src="/assets/js/popper.min.js"></script>
+        <script type="text/javascript" src="/assets/js/slick.min.js"></script>
+        <script type="text/javascript" src="/assets/js/isotope.pkgd.min.js"></script>
+        <script type="text/javascript" src="/assets/js/imagesloaded.pkgd.min.js"></script>
+        <script type="text/javascript" src="/assets/js/jquery.magnific-popup.min.js"></script>
+        <script type="text/javascript" src="/assets/js/scrolling-nav.js"></script>
+        <script type="text/javascript" src="/assets/js/jquery.easing.min.js"></script>
+        <script type="text/javascript" src="/assets/js/wow.min.js"></script>
+        <script type="text/javascript" src="/assets/js/main.js"></script>
       </Head>
-      <Container>
-        <h1>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-        <p>
-          Get started by editing <code>pages/index.js</code>
-        </p>
-        <Container>
-          <Row className="justify-content-md-between">
-            <Card className="sml-card">
-              <Card.Body>
-                <Card.Title>Documentation</Card.Title>
-                <Card.Text>
-                  Find in-depth information about Next.js features and API.
-                </Card.Text>
-                <Button variant="primary" href="https://nextjs.org/docs">
-                  More &rarr;
-                </Button>
-              </Card.Body>
-            </Card>
-            <Card className="sml-card">
-              <Card.Body>
-                <Card.Title>Learn</Card.Title>
-                <Card.Text>
-                  Learn about Next.js in an interactive course with quizzes!
-                </Card.Text>
-                <Button variant="primary" href="https://nextjs.org/learn">
-                  More &rarr;
-                </Button>
-              </Card.Body>
-            </Card>
-          </Row>
-          <Row className="justify-content-md-between">
-            <Card className="sml-card">
-              <Card.Body>
-                <Card.Title>Examples</Card.Title>
-                <Card.Text>
-                  Discover and deploy boilerplate example Next.js projects.
-                </Card.Text>
-                <Button
-                  variant="primary"
-                  href="https://github.com/vercel/next.js/tree/master/examples"
-                >
-                  More &rarr;
-                </Button>
-              </Card.Body>
-            </Card>
-            <Card className="sml-card">
-              <Card.Body>
-                <Card.Title>Deploy</Card.Title>
-                <Card.Text>
-                  Instantly deploy your Next.js site to a public URL with
-                  Vercel.
-                </Card.Text>
-                <Button
-                  variant="primary"
-                  href="https://vercel.com/import?filter=next.js&utm_source=github&utm_medium=example&utm_campaign=next-example"
-                >
-                  More &rarr;
-                </Button>
-              </Card.Body>
-            </Card>
-          </Row>
-        </Container>
-      </Container>
-
-      <footer className="cntr-footer">
-        <a
-          href="https://vercel.com?filter=next.js&utm_source=github&utm_medium=example&utm_campaign=next-example"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="sml-logo" />
-        </a>
-      </footer>
-    </Container>
+      <PreLoader />
+      <NavBar />
+      <About />
+      <Contact />
+      <Footer />
+      <BackToTop />
+    </div>
   )
 }
