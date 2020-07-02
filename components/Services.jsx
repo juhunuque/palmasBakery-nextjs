@@ -1,12 +1,9 @@
 export default function NavBar() {
   return (
-    <section id="about" className="about-area">
+    <section id="services" className="about-area">
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-xl-6 col-lg-8">
-            <div className="about-image text-center wow fadeInUp" data-wow-duration="1.5s" data-wow-offset="100">
-              <img src="assets/images/logo-palma.png" alt="services"/>
-            </div>
             <div className="section-title text-center mt-30 pb-40">
               <h4 className="title wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.6s">
                 Horneamos tu idea

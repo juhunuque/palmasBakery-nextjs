@@ -20,10 +20,16 @@ export default function NavBar() {
                   <div className="collapse navbar-collapse sub-menu-bar" id="navbarEight">
                     <ul className="navbar-nav ml-auto">
                       <li className="nav-item active">
-                        <a className="page-scroll" href="#home">Nosotros</a>
+                        <a className="page-scroll" href="#home">Inicio</a>
+                      </li>
+                      <li className="nav-item active">
+                        <a className="page-scroll" href="#aboutus">Nosotros</a>
                       </li>
                       <li className="nav-item">
-                        <a className="page-scroll" href="#about">Servicios</a>
+                        <a className="page-scroll" href="#services">Servicios</a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="page-scroll" href="#portfolio">Productos</a>
                       </li>
                       <li className="nav-item">
                         <a className="page-scroll" href="#contact">Contáctenos</a>

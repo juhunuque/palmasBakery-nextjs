@@ -27,7 +27,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a href="https://www.facebook.com/Palmas-Bakery-689040084579652" target="_blank">
-                  <i className="lni-facebook-filled"></i>
+                    <i className="lni-facebook-filled"></i>
                   </a>
                 </li>
                 <li>
