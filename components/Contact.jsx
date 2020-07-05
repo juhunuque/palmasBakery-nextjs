@@ -1,4 +1,25 @@
+import { useForm } from "react-hook-form";
+
+const fromEmail = process.env.NEXT_PUBLIC_FROM_EMAIL;
+const toEmail = process.env.NEXT_PUBLIC_TO_EMAIL;
+const apiKey = process.env.NEXT_PUBLIC_API_KEY;
+
 export default function Contact() {
+  const { register, handleSubmit, errors, reset } = useForm();
+
+  const onSubmit = async data => {
+
+    const subject = `Palma's Bakery Cotización Web - ${data.name}`;
+    const fromName = "Palma's Bakery Web";
+
+    await fetch(`https://api.elasticemail.com/v2/email/send?apikey=${apiKey}&subject=${subject}&from=${fromEmail}&fromName=${fromName}&msgTo=${toEmail}&bodyHtml=<ul><li>Email: <a href="${data.email}">${data.email}</a></li><li>Nombre: ${data.name}</li><li>Mensaje: ${data.message}</li></ul>&encodingType=0`,
+      {
+        method: 'POST',
+      });
+    window.alert('Hemos recibido tu mensaje, pronto te estaremos contactando.');
+    reset();
+  };
+
   return (
     <section id="contact" className="contact-area">
       <div className="container">
@@ -30,25 +51,28 @@ export default function Contact() {
           <div className="col-lg-6">
             <div className="contact-form form-style-one mt-35 wow fadeIn" data-wow-duration="1.5s"
                  data-wow-delay="0.5s">
-              <form id="contact-form" action="assets/contact.php" method="post">
+              <form id="contact-form" onSubmit={handleSubmit(onSubmit)} method="post">
                 <div className="form-input mt-15">
                   <label>Nombre completo</label>
                   <div className="input-items default">
-                    <input type="text" placeholder="Nombre completo" name="name"/>
+                    <input type="text" placeholder="Nombre completo" name="name" ref={register({ required: true })}/>
+                    <span style={{color: 'red'}}>{errors.email && "Campo requerido."}</span>
                     <i className="lni-user"></i>
                   </div>
                 </div>
                 <div className="form-input mt-15">
                   <label>Email</label>
                   <div className="input-items default">
-                    <input type="email" placeholder="Email" name="email"/>
+                    <input type="email" placeholder="Email" name="email" ref={register({ required: true })}/>
+                    <span style={{color: 'red'}}>{errors.email && "Campo requerido."}</span>
                     <i className="lni-envelope"></i>
                   </div>
                 </div>
                 <div className="form-input mt-15">
                   <label>Tu diseño</label>
                   <div className="input-items default">
-                    <textarea placeholder="¿Que tienes en mente?" name="massage"></textarea>
+                    <textarea placeholder="¿Que tienes en mente?" name="message" ref={register({ required: true })}></textarea>
+                    <span style={{color: 'red'}}>{errors.email && "Campo requerido."}</span>
                     <i className="lni-pencil-alt"></i>
                   </div>
                 </div>

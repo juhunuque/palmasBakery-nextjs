@@ -14,7 +14,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Palma's Bakery</title>
-        <link rel="icon" href="/favicon-32x32.png" />
+        <link rel="icon" href="/favicon.png" />
         <script type="text/javascript" src="/assets/js/vendor/modernizr-3.6.0.min.js"></script>
         <script type="text/javascript" src="/assets/js/vendor/jquery-1.12.4.min.js"></script>
         <script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
