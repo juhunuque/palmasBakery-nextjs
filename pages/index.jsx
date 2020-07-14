@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import { Container, Row, Card, Button } from 'react-bootstrap'
 import PreLoader from '../components/PreLoader'
 import NavBar from '../components/NavBar'
 import Services from '../components/Services'
@@ -8,10 +7,22 @@ import Footer from '../components/Footer'
 import BackToTop from "../components/BackToTop";
 import Portfolio from "../components/Portfolio";
 import AboutUs from "../components/AboutUs";
+import { DefaultSeo } from 'next-seo';
 
 export default function Home() {
   return (
     <div>
+      <DefaultSeo
+        openGraph={{
+          type: 'website',
+          title: "Palma's Bakery",
+          images: [],
+          locale: 'es_ES',
+          url: 'https://palmasbakery.net',
+          site_name: "Palma's Bakery",
+          description: "Palma's Bakery - Sweet moments"
+        }}
+      />
       <Head>
         <title>Palma's Bakery</title>
         <link rel="icon" href="/favicon.png" />
