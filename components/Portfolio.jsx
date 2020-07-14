@@ -30,14 +30,14 @@ const images = {
       description: 'Pie de Limón'
     },
     {
-      url: 'https://scontent.fsjo6-1.fna.fbcdn.net/v/t1.0-9/32105172_1102104069939916_3474202975629475840_n.jpg?_nc_cat=104&_nc_sid=0debeb&_nc_ohc=BWDHwYBNcmYAX-9DysO&_nc_ht=scontent.fsjo6-1.fna&oh=c393deb90cba455778a77e5e22837e27&oe=5F24BD48',
-      description: 'Arrollados relleno de jalea de guayaba 🍈'
+      url: 'https://scontent.fsjo6-1.fna.fbcdn.net/v/t1.0-9/78844113_1623347817815536_2315126611088769024_o.jpg?_nc_cat=108&_nc_sid=0debeb&_nc_ohc=UcpGzHAUbcAAX_HMKsA&_nc_ht=scontent.fsjo6-1.fna&oh=63e506066622274b9203d5c11d2bdf0e&oe=5F337522',
+      description: 'Mousse de chocolate'
     }
   ],
   otros: [
     {
-      url: 'https://scontent.fsjo6-1.fna.fbcdn.net/v/t1.0-9/69760627_1526644074152578_1695815786116939776_o.jpg?_nc_cat=108&_nc_sid=0debeb&_nc_ohc=krPOfTtJ4CIAX-I0QNy&_nc_ht=scontent.fsjo6-1.fna&oh=9f4f6e8dd58213e9c07f509f0f9c965a&oe=5F2334C8',
-      description: 'Mesa dulce para baby shower'
+      url: 'https://scontent.fsjo6-1.fna.fbcdn.net/v/t1.0-9/101693765_1782752631875053_8696660762619281408_o.jpg?_nc_cat=103&_nc_sid=0debeb&_nc_ohc=xz-S2Fw5clkAX9_A-Oz&_nc_ht=scontent.fsjo6-1.fna&oh=9b8192a20a12f6f6571d1f1e6795deac&oe=5F3330D1',
+      description: 'Regalos diferentes'
     },
     {
       url: 'https://scontent.fsjo6-1.fna.fbcdn.net/v/t1.0-9/32202633_1102581936558796_3151219450695385088_o.jpg?_nc_cat=104&_nc_sid=0debeb&_nc_ohc=jL4ZplX6UoIAX_nDRuT&_nc_ht=scontent.fsjo6-1.fna&oh=ed82f13eb667f00967f0f2e7c497a72c&oe=5F24046A',

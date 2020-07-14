@@ -12,12 +12,19 @@ export default function AboutUs() {
                 ¿Quiénes somos?
               </h4>
               <p className="text wow fadeInUp text-justify" data-wow-duration="1.5s" data-wow-delay="1s">
-                Palmas Bakery nace un 27 de junio del 2016 en el cual decidí emprender como persona para
-                ofrecer un producto de la mejor calidad, garantizando una excelente atención y servicio para así
-                lograr una buena satisfacción del cliente.
+                Palma´s Bakery nace un 27 de junio del 2016 en el cual decidí emprender mi propio proyecto, con la
+                intención de brindar siempre un producto diferenciado, de la mejor calidad y sobre todo acompañando al
+                cliente de principio a fin en lograr el postre perfecto para esa ocasión especial.
               </p>
               <p className="text wow fadeInUp text-justify" data-wow-duration="1.5s" data-wow-delay="1s">
-                Y no solo nos enfocamos en pasteles, también ofrecemos postres y mini postres para mesas dulces.
+                Palma’s Bakery se ha convertido hasta el día de hoy en la plataforma donde puedo unir mi trabajo y mi
+                pasión por la pastelería.
+                Tal vez se preguntaran él porque ¨Palmas¨ bueno nace de mi apellido y porqué mis amig@s y conocidos me
+                han llamado por Palma entonces decidí optar por ese nombre.
+              </p>
+              <p className="text wow fadeInUp text-justify" data-wow-duration="1.5s" data-wow-delay="1s">
+                Mi mayor alegría y a la vez el reto es ver a nuestros clientes satisfechos con el producto que compran, así
+                que los espero ver pronto.
               </p>
             </div>
           </div>
