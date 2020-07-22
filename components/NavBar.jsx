@@ -49,7 +49,7 @@ export default function NavBar() {
               <div className="carousel-inner">
 
                 <div className="carousel-item bg_cover active"
-                     style={{backgroundImage: 'url(assets/images/about-slide1.opacity.jpg)'}}>
+                     style={{backgroundImage: 'url(assets/images/about_slide_opacity2.png)'}}>
                   <div className="carousel-caption">
                     <div className="container">
                       <div className="row justify-content-center">

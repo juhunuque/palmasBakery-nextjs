@@ -63,7 +63,7 @@ export default function NavBar() {
               <div className="about-content media-body">
                 <h4 className="about-title">Mesa dulce</h4>
                 <p className="text">
-                  Si necesitas un regalo, tenemos una opción especial y deliciosa.
+                  Deliciosos mini postres para tu ocasión u evento especial.
                 </p>
               </div>
             </div>
