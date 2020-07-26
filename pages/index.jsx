@@ -8,8 +8,10 @@ import BackToTop from "../components/BackToTop";
 import Portfolio from "../components/Portfolio";
 import AboutUs from "../components/AboutUs";
 import { DefaultSeo } from 'next-seo';
+import { Client } from '../utils/prismic-configuration'
+import Prismic from 'prismic-javascript'
 
-export default function Home() {
+const Home = ({ products }) => {
   return (
     <div>
       <DefaultSeo
@@ -43,10 +45,23 @@ export default function Home() {
       <NavBar />
       <AboutUs />
       <Services />
-      <Portfolio />
+      <Portfolio products={products.results}/>
       <Contact />
       <Footer />
       <BackToTop />
     </div>
   )
 }
+
+Home.getInitialProps = async (ctx) => {
+  const { req } = ctx;
+  const products = await Client(req).query(
+    [Prismic.Predicates.at('document.type', 'products')],
+    { pageSize : 100 }
+  );
+  return {
+    products
+  }
+};
+
+export default Home;
