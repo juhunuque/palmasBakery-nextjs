@@ -58,7 +58,7 @@ export default function NavBar() {
           <div className="col-lg-6">
             <div className="single-about d-sm-flex mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.8s">
               <div className="about-icon">
-                <img src="https://scontent.fsjo6-1.fna.fbcdn.net/v/t1.0-9/69760627_1526644074152578_1695815786116939776_o.jpg?_nc_cat=108&_nc_sid=0debeb&_nc_ohc=krPOfTtJ4CIAX-I0QNy&_nc_ht=scontent.fsjo6-1.fna&oh=9f4f6e8dd58213e9c07f509f0f9c965a&oe=5F2334C8" alt="Icon"/>
+                <img src="assets/images/products/mesadulce.jpg" alt="Icon"/>
               </div>
               <div className="about-content media-body">
                 <h4 className="about-title">Mesa dulce</h4>
