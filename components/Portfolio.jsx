@@ -46,11 +46,11 @@ export default function Portofolio({ products }) {
             <div key={i.id} className="col-lg-4 col-sm-6 branding-3 cupcakes-category">
               <div className="single-portfolio mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.2s">
                 <div className="portfolio-image">
-                  <img src={i.data.image_url.url} alt=""/>
+                  <img src={i.data.image_url.url || i.data.image.url} alt=""/>
                   <div className="portfolio-overlay d-flex align-items-center justify-content-center">
                     <div className="portfolio-content">
                       <div className="portfolio-icon">
-                        <a className="image-popup" href={i.data.image_url.url}><i className="lni-zoom-in"></i></a>
+                        <a className="image-popup" href={i.data.image_url.url || i.data.image.url}><i className="lni-zoom-in"></i></a>
                       </div>
                     </div>
                   </div>
@@ -68,11 +68,11 @@ export default function Portofolio({ products }) {
             <div key={i.id} className="col-lg-4 col-sm-6 branding-3 queques-category">
               <div className="single-portfolio mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.2s">
                 <div className="portfolio-image">
-                  <img src={i.data.image_url.url} alt=""/>
+                  <img src={i.data.image_url.url || i.data.image.url} alt=""/>
                   <div className="portfolio-overlay d-flex align-items-center justify-content-center">
                     <div className="portfolio-content">
                       <div className="portfolio-icon">
-                        <a className="image-popup" href={i.data.image_url.url}><i className="lni-zoom-in"></i></a>
+                        <a className="image-popup" href={i.data.image_url.url || i.data.image.url}><i className="lni-zoom-in"></i></a>
                       </div>
                     </div>
                   </div>
@@ -90,11 +90,11 @@ export default function Portofolio({ products }) {
             <div key={i.id} className="col-lg-4 col-sm-6 branding-3 postres-category">
               <div className="single-portfolio mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.2s">
                 <div className="portfolio-image">
-                  <img src={i.data.image_url.url} alt=""/>
+                  <img src={i.data.image_url.url || i.data.image.url} alt=""/>
                   <div className="portfolio-overlay d-flex align-items-center justify-content-center">
                     <div className="portfolio-content">
                       <div className="portfolio-icon">
-                        <a className="image-popup" href={i.data.image_url.url}><i className="lni-zoom-in"></i></a>
+                        <a className="image-popup" href={i.data.image_url.url || i.data.image.url}><i className="lni-zoom-in"></i></a>
                       </div>
                     </div>
                   </div>
@@ -112,11 +112,11 @@ export default function Portofolio({ products }) {
             <div key={i.id} className="col-lg-4 col-sm-6 branding-3 otros-category">
               <div className="single-portfolio mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.2s">
                 <div className="portfolio-image">
-                  <img src={i.data.image_url.url} alt=""/>
+                  <img src={i.data.image_url.url || i.data.image.url} alt=""/>
                   <div className="portfolio-overlay d-flex align-items-center justify-content-center">
                     <div className="portfolio-content">
                       <div className="portfolio-icon">
-                        <a className="image-popup" href={i.data.image_url.url}><i className="lni-zoom-in"></i></a>
+                        <a className="image-popup" href={i.data.image_url.url || i.data.image.url}><i className="lni-zoom-in"></i></a>
                       </div>
                     </div>
                   </div>
